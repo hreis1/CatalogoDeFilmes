@@ -33,8 +33,6 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
  **Detalhes de um Filme**:
    - [ ] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
 
-## Tarefas Extras
-
 **Separar Filmes por "Lançados" e "A Ser Lançados"**:
    - [ ] Permitir que os filmes sejam categorizados como "já lançados" ou "a ser lançados". Os usuários podem visualizar essa informação tanto na listagem quanto nos detalhes de um filme.
 
