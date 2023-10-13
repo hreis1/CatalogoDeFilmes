@@ -1,13 +1,24 @@
-<h3><%= @movie.title %></h3>
-
-<div class"card">
-  <div class="card-body">
-    <h5 class="card-title"><%= @movie.release_year %></h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.synopsis %></h6>
-    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.director.name %></h6>
-    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.genre.name %></h6>
-  </div>
-</div>
+<h3>Detalhes do Filme</h3>
 
 <%= link_to 'Editar', edit_movie_path(@movie) %> |
 <%= link_to 'Voltar', root_path %>
+<hr>
+
+<div class="d-flex gap-3 justify-content-evenly flex-wrap">
+  <div class="card" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYl9UexgW-fdwSnrL4h_2vx76d9xcVHILbg&usqp=CAU" class="card-img-top" alt="..."> 
+    <div class="card-body">
+      <h5 class="card-title"><%= @movie.title %></h5>
+      <p class="card-text"><%= @movie.synopsis %></p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <%= @movie.release_year %> |
+        <%= link_to "#{@movie.genre.name}", genre_path(@movie.genre.id), class: "card-link" %> 
+      </li>
+    </ul>
+    <div class="card-body" style="max-height: 50px;">
+      <%= link_to "#{@movie.director.name}", director_path(@movie.director.id), class: "card-link" %>
+    </div>
+  </div>
+</div>
