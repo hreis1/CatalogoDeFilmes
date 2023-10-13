@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'home#index'
-  resources :generos, only: [:new, :create, :index, :show, :edit, :update]
+  resources :genres, only: [:new, :create, :index, :show, :edit, :update]
+  resources :directors, only: [:new, :create, :index, :show, :edit, :update]
 end

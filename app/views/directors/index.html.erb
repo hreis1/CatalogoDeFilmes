@@ -1,0 +1,11 @@
+<h3>Diretores</h3>
+
+<ul class="list-group">
+  <% @diretores.each do |diretor| %>
+    <li class="list-group-item">
+      <%= link_to diretor.name, director_path(diretor.id) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Cadastrar diretor',new_director_path %>

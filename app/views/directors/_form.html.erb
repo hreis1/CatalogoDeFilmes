@@ -1,0 +1,24 @@
+<%= form_with model: @diretor do |f| %>
+  
+  <div class="mb-3">
+    <%= f.label :name, "Nome" %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :nationality, "Nacionalidade" %>
+    <%= f.text_field :nationality %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :date_of_birth, "Data de nascimento" %>
+    <%= f.date_field :date_of_birth %>
+  </div>
+  <div class="mb-3">
+    <%= f.label :genre_id, "Gênero favorito" %>
+    <%= collection_select(:director, :genre_id, Genre.all, :id, :name) %>
+  </div>
+  
+  <%= f.submit 'Salvar' %>
+
+<% end %>
+
+<%= link_to 'Voltar', directors_path %>

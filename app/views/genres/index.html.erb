@@ -1,0 +1,12 @@
+<h3>Gêneros</h3>
+
+
+<ul class="list-group">
+  <% @generos.each do |genero| %>
+    <li class="list-group-item">
+        <%= link_to genero.name, genre_path(genero.id) %>
+      </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Cadastrar gênero', new_genre_path %>

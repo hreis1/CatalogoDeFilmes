@@ -1,7 +1,0 @@
-<h3>Gêneros</h3>
-
-<%  @generos.each do |genero| %>
-  <p><%= link_to genero.nome, genero_path(genero.id) %></p>
-<% end %>
-
-<%= link_to 'Cadastrar gênero',new_genero_path %>

@@ -1,12 +1,12 @@
 <%= form_with model: @genero do |f| %>
   
   <div class="mb-3">
-    <%= f.label :nome, "Nome" %>
-    <%= f.text_field :nome %>
+    <%= f.label :name, "Nome" %>
+    <%= f.text_field :name %>
   </div>
   
   <%= f.submit 'Salvar' %>
 
 <% end %>
 
-<%= link_to 'Voltar', generos_path %>
+<%= link_to 'Voltar', genres_path %>
