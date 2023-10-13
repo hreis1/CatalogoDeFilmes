@@ -1,24 +1,50 @@
-# README
+# Projeto de Gerenciamento de Filmes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A aplicação oferece funcionalidades para criar, editar e visualizar informações detalhadas sobre gêneros, diretores e filmes.
 
-Things you may want to cover:
+## Escopo do Projeto
 
-* Ruby version
+O projeto tem como objetivo principal criar um sistema de gerenciamento de filmes com as seguintes funcionalidades:
 
-* System dependencies
+**Gerenciamento de Gêneros de Filmes**:
+   - [X] Cadastro e edição de gêneros de filmes.
 
-* Configuration
+**Listagem de Gêneros**:
+   - [X] Visualização de todos os gêneros cadastrados.
 
-* Database creation
+**Detalhes de um Gênero**:
+   - [ ] Ao entrar na tela de detalhes de um gênero, o usuário pode ver todos os filmes associados a esse gênero.
 
-* Database initialization
+**Gerenciamento de Diretores**:
+   - [ ] Cadastro e edição de diretores, com informações como nome, nacionalidade, data de nascimento e gênero favorito.
 
-* How to run the test suite
+**Listagem de Diretores**:
+   - [ ] Visualização de todos os diretores cadastrados.
 
-* Services (job queues, cache servers, search engines, etc.)
+ **Detalhes de um Diretor**:
+   - [ ] Ao entrar na tela de detalhes de um diretor(a), o usuário pode ver todos os filmes dirigidos por essa pessoa.
 
-* Deployment instructions
+**Gerenciamento de Filmes**:
+   - [ ] Cadastro e edição de filmes, com informações como título, ano de lançamento, sinopse, país de origem, duração (em minutos), diretor(a) e gênero.
+ 
+ **Listagem de Filmes**:
+   - [ ] Visualização de todos os filmes cadastrados, exibindo apenas título e ano de lançamento.
+ 
+ **Detalhes de um Filme**:
+   - [ ] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
 
-* ...
+**Separar Filmes por "Lançados" e "A Ser Lançados"**:
+   - [ ] Permitir que os filmes sejam categorizados como "já lançados" ou "a ser lançados". Os usuários podem visualizar essa informação tanto na listagem quanto nos detalhes de um filme.
+
+**Marcadores de "Rascunho" para Filmes**:
+   - [ ] Implementar a opção de marcar um filme como "rascunho", e exibi-lo apenas se não estiver marcado como tal.
+
+**Cadastro de Pôster de Filmes**:
+   - [ ] Permitir o cadastro de uma imagem do pôster para cada filme e exibir essa imagem na listagem e nos detalhes do filme.
+
+## Tecnologias Utilizadas
+
+- Linguagem de Programação: Ruby
+- Framework Web: Rails
+- Banco de Dados: SQLite
+- Frontend: HTML, CSS, Bootstrap
