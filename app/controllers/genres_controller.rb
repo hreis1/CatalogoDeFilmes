@@ -3,7 +3,9 @@ class GenresController < ApplicationController
     @generos = Genre.all; end
   
   def show
-    @genero = Genre.find(params[:id]); end
+    @genero = Genre.find(params[:id])
+    @movies = Movie.where(genre_id: @genero.id);
+  end
   
   def new
     @genero = Genre.new; end

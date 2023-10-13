@@ -3,22 +3,22 @@
 end
 
 directors = [
-  ["Quentin Tarantino", "Americano", "1963-03-27"],
-  ["Martin Scorsese", "Americano", "1942-11-17"],
-  ["Steven Spielberg", "Americano", "1946-12-18"],
-  ["Christopher Nolan", "Inglês", "1970-07-30"],
-  ["David Fincher", "Americano", "1962-08-28"],
-  ["Spike Lee", "Americano", "1957-03-20"],
-  ["Wes Anderson", "Americano", "1969-05-01"],
-  ["Sofia Coppola", "Americana", "1971-05-14"],
-  ["Alfred Hitchcock", "Inglês", "1899-08-13"],
-  ["Stanley Kubrick", "Americano", "1928-07-26"],
-  ["Francis Ford Coppola", "Americano", "1939-04-07"],
-  ["Tim Burton", "Americano", "1958-08-25"],
-  ["George Lucas", "Americano", "1944-05-14"],
-  ["James Cameron", "Canadense", "1954-08-16"],
-  ["Ridley Scott", "Inglês", "1937-11-30"],
-  ["Peter Jackson", "Neozelandês", "1961-10-31"]
+  ["Quentin Tarantino", "Americano", "27-03-1963"],
+  ["Martin Scorsese", "Americano", "17-11-1942"],
+  ["Steven Spielberg", "Americano", "18-12-1946"],
+  ["Christopher Nolan", "Inglês", "30-07-1970"],
+  ["David Fincher", "Americano", "28-08-1962"],
+  ["Spike Lee", "Americano", "20-03-1957"],
+  ["Wes Anderson", "Americano", "01-05-1969"],
+  ["Sofia Coppola", "Americana", "14-05-1971"],
+  ["Alfred Hitchcock", "Inglês", "13-08-1899"],
+  ["Stanley Kubrick", "Americano", "26-07-1928"],
+  ["Francis Ford Coppola", "Americano", "07-04-1939"],
+  ["Tim Burton", "Americano", "25-08-1958"],
+  ["George Lucas", "Americano", "14-05-1944"],
+  ["James Cameron", "Canadense", "16-08-1954"],
+  ["Ridley Scott", "Inglês", "30-11-1937"],
+  ["Peter Jackson", "Neozelandês", "31-10-1961"],
 ]
 directors.each do |director|
   Director.find_or_create_by!(name:director[0], nationality:director[1] ,date_of_birth:director[2], genre_id:rand(1..8))
@@ -34,7 +34,13 @@ movies = [
   ["O Lobo de Wall Street", 2013, "Jordan Belfort é um ambicioso corretor da bolsa de valores que cria um verdadeiro império, enriquecendo de forma rápida, porém ilegal. Ele e seus amigos mergulham em um mundo de excessos, mas seus métodos ilícitos despertam a atenção da polícia.", "EUA", 180, 2, 3],
   ["O Aviador", 2004, "O filme conta a história de Howard Hughes, um excêntrico milionário que ficou conhecido por suas produções hollywoodianas e por quebrar recordes de velocidade em aviões.", "EUA", 170, 2, 3],
   ["Cassino", 1995, "Sam Rothstein é um apostador profissional enviado a Las Vegas para administrar um cassino de propriedade de um grupo de mafiosos. Sam acaba se envolvendo com uma prostituta e com uma ex-namorada do seu chefe.", "EUA", 178, 2, 3],
-  ["O Irlandês", 2019, "O Irlandês é um épico sobre o crime organizado nos Estados Unidos do pós-guerra contado através da perspectiva do veterano da Segunda Guerra Mundial Frank Sheeran, um assassino profissional que trabalhou ao lado de algumas das personalidades mais marcantes do século 20.", "EUA", 209, 2, 3]
+  ["O Irlandês", 2019, "O Irlandês é um épico sobre o crime organizado nos Estados Unidos do pós-guerra contado através da perspectiva do veterano da Segunda Guerra Mundial Frank Sheeran, um assassino profissional que trabalhou ao lado de algumas das personalidades mais marcantes do século 20.", "EUA", 209, 2, 3],
+  ["The Matrix", 1999, "A realidade que conhecemos é uma simulação criada por máquinas. Um hacker, Neo, é escolhido para liderar a resistência humana contra as máquinas.", "EUA", 136, 4, 8],
+  ["Forrest Gump", 1994, "A história da vida de Forrest Gump, um homem comum que acidentalmente desempenha um papel importante em eventos significativos da história americana.", "EUA", 142, 3, 4],
+  ["Inception", 2010, "Dom Cobb é um ladrão de segredos que entra nos sonhos das pessoas. Ele é contratado para implantar uma ideia na mente de um empresário.", "EUA", 148, 4, 8],
+  ["The Shawshank Redemption", 1994, "Um homem inocente é condenado à prisão perpétua em Shawshank e faz amizade com outros prisioneiros enquanto planeja sua fuga.", "EUA", 142, 3, 4],
+  ["Jaws", 1975, "Um grande tubarão-branco ameaça uma cidade costeira e um pescador, um biólogo marinho e um chefe de polícia se unem para detê-lo.", "EUA", 124, 5, 6]
+
 ]
 
 movies.each do |movie|

@@ -1,5 +1,6 @@
 <h3>Gêneros</h3>
-
+<%= link_to 'Cadastrar gênero', new_genre_path %>
+<hr>
 
 <ul class="list-group">
   <% @generos.each do |genero| %>
@@ -8,5 +9,3 @@
       </li>
   <% end %>
 </ul>
-
-<%= link_to 'Cadastrar gênero', new_genre_path %>

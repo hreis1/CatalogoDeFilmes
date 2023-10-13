@@ -1,4 +1,6 @@
 <h3>Diretores</h3>
+<%= link_to 'Cadastrar diretor',new_director_path %>
+<hr>
 
 <ul class="list-group">
   <% @diretores.each do |diretor| %>
@@ -7,5 +9,3 @@
     </li>
   <% end %>
 </ul>
-
-<%= link_to 'Cadastrar diretor',new_director_path %>

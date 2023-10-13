@@ -3,7 +3,9 @@ class DirectorsController < ApplicationController
     @diretores = Director.all; end
   
   def show
-    @diretor = Director.find(params[:id]); end
+    @diretor = Director.find(params[:id])
+    @movies = Movie.where(director_id: @diretor.id);
+  end
   
   def new
     @diretor = Director.new; end
