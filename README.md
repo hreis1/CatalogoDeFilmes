@@ -16,10 +16,10 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [ ] Ao entrar na tela de detalhes de um gênero, o usuário pode ver todos os filmes associados a esse gênero.
 
 **Gerenciamento de Diretores**:
-   - [ ] Cadastro e edição de diretores, com informações como nome, nacionalidade, data de nascimento e gênero favorito.
+   - [X] Cadastro e edição de diretores, com informações como nome, nacionalidade, data de nascimento e gênero favorito.
 
 **Listagem de Diretores**:
-   - [ ] Visualização de todos os diretores cadastrados.
+   - [X] Visualização de todos os diretores cadastrados.
 
  **Detalhes de um Diretor**:
    - [ ] Ao entrar na tela de detalhes de um diretor(a), o usuário pode ver todos os filmes dirigidos por essa pessoa.
