@@ -1,0 +1,13 @@
+<h3><%= @movie.title %></h3>
+
+<div class"card">
+  <div class="card-body">
+    <h5 class="card-title"><%= @movie.release_year %></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.synopsis %></h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.director.name %></h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><%= @movie.genre.name %></h6>
+  </div>
+</div>
+
+<%= link_to 'Editar', edit_movie_path(@movie) %> |
+<%= link_to 'Voltar', root_path %>
