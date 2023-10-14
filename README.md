@@ -13,7 +13,7 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [X] Visualização de todos os gêneros cadastrados.
 
 **Detalhes de um Gênero**:
-   - [ ] Ao entrar na tela de detalhes de um gênero, o usuário pode ver todos os filmes associados a esse gênero.
+   - [X] Ao entrar na tela de detalhes de um gênero, o usuário pode ver todos os filmes associados a esse gênero.
 
 **Gerenciamento de Diretores**:
    - [X] Cadastro e edição de diretores, com informações como nome, nacionalidade, data de nascimento e gênero favorito.
@@ -22,7 +22,7 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [X] Visualização de todos os diretores cadastrados.
 
  **Detalhes de um Diretor**:
-   - [ ] Ao entrar na tela de detalhes de um diretor(a), o usuário pode ver todos os filmes dirigidos por essa pessoa.
+   - [X] Ao entrar na tela de detalhes de um diretor(a), o usuário pode ver todos os filmes dirigidos por essa pessoa.
 
 **Gerenciamento de Filmes**:
    - [ ] Cadastro e edição de filmes, com informações como título, ano de lançamento, sinopse, país de origem, duração (em minutos), diretor(a) e gênero.
@@ -31,7 +31,7 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [ ] Visualização de todos os filmes cadastrados, exibindo apenas título e ano de lançamento.
  
  **Detalhes de um Filme**:
-   - [ ] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
+   - [X] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
 
 **Separar Filmes por "Lançados" e "A Ser Lançados"**:
    - [ ] Permitir que os filmes sejam categorizados como "já lançados" ou "a ser lançados". Os usuários podem visualizar essa informação tanto na listagem quanto nos detalhes de um filme.
