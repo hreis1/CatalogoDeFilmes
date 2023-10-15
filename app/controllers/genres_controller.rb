@@ -1,6 +1,7 @@
 class GenresController < ApplicationController
   def index
-    @generos = Genre.all; end
+    @generos = Genre.order(:name)
+  end
   
   def show
     @genero = Genre.find(params[:id])

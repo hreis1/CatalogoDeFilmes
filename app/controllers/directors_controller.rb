@@ -1,6 +1,7 @@
 class DirectorsController < ApplicationController
   def index
-    @diretores = Director.all; end
+    @diretores = Director.order(:name)
+  end
   
   def show
     @diretor = Director.find(params[:id])

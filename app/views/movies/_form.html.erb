@@ -1,0 +1,33 @@
+<%= form_with model: @movie do |f| %>
+  <div>
+    <div class="mb-3">
+      <%= f.label :title, "Título" %>
+      <%= f.text_field :title %>
+    </div>
+  
+    <div class="mb-3">
+      <%= f.label :synopsis, "Sinopse" %>
+      <%= f.text_area :synopsis %>
+    </div>
+  
+    <div class="mb-3">
+      <%= f.label :release_year, "Ano de lançamento" %>
+      <%= f.number_field :release_year %>
+    </div>
+  
+    <div class="mb-3">
+      <%= f.label :director_id, "Diretor" %>
+      <%= collection_select(:movie, :director_id, Director.all, :id, :name) %>
+    </div>
+  
+    <div class="mb-3">
+      <%= f.label :genre_id, "Gênero" %>
+      <%= collection_select(:movie, :genre_id, Genre.all, :id, :name) %>
+    </div>
+  
+    <%= f.submit 'Salvar', class: "btn btn-primary" %>
+  
+  <% end %>
+  
+  <%= link_to 'Voltar', root_path, class: "btn btn-primary" %>
+  </div>
