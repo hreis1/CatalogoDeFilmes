@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      movie: Filme
+    attributes:
+      movie:
+        title: Título
+        synopsis: Sinopse
+        release_year: Ano de lançamento
+        origin_country: País de origem        
+        length: Duração
+        director: Diretor
+          

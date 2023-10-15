@@ -1,22 +1,22 @@
 <%= form_with model: @movie do |f| %>
   <div>
     <div class="mb-3">
-      <%= f.label :title, "Título" %>
+      <%= f.label :title %>
       <%= f.text_field :title %>
     </div>
   
     <div class="mb-3">
-      <%= f.label :synopsis, "Sinopse" %>
+      <%= f.label :synopsis %>
       <%= f.text_area :synopsis %>
     </div>
   
     <div class="mb-3">
-      <%= f.label :release_year, "Ano de lançamento" %>
+      <%= f.label :release_year %>
       <%= f.number_field :release_year %>
     </div>
 
     <div class="mb-3">
-      <%= f.label :origin_country, "País de origem" %>
+      <%= f.label :origin_country %>
       <%= f.text_field :origin_country %>
     </div>
 
@@ -29,7 +29,12 @@
       <%= f.label :genre_id, "Gênero" %>
       <%= collection_select(:movie, :genre_id, Genre.all, :id, :name) %>
     </div>
-  
+
+    <div class="mb-3">
+      <%= f.label :status, "Lançado" %>
+      <%= f.check_box :status %>
+    </div>
+
     <%= f.submit 'Salvar', class: "btn btn-primary" %>
   
   <% end %>

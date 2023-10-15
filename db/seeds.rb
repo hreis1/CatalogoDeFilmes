@@ -44,5 +44,5 @@ movies = [
 ]
 
 movies.each do |movie|
-  Movie.find_or_create_by!(title:movie[0], release_year:movie[1] ,synopsis:movie[2], origin_country:movie[3], duration_minutes:movie[4], director_id:movie[5], genre_id:movie[6])
+  Movie.find_or_create_by!(title:movie[0], release_year:movie[1] ,synopsis:movie[2], origin_country:movie[3], duration_minutes:movie[4], director_id:movie[5], genre_id:movie[6], status: 1)
 end

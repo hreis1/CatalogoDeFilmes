@@ -16,9 +16,18 @@
         <%= @movie.release_year %> |
         <%= link_to "#{@movie.genre.name}", genre_path(@movie.genre.id), class: "card-link" %> 
       </li>
+      <li class="list-group-item">
+        <div class="card-body">
+          <%= link_to "#{@movie.director.name}", director_path(@movie.director.id), class: "card-link" %>
+        </div>
+      </li>
     </ul>
-    <div class="card-body" style="max-height: 50px;">
-      <%= link_to "#{@movie.director.name}", director_path(@movie.director.id), class: "card-link" %>
+    <div class="card-body">
+      <% if @movie.released?  %>
+        <%= button_to 'despublicar', not_release_movie_path, { method: :patch } %>
+      <% else %>
+        <%= button_to 'publicar', release_movie_path, { method: :patch } %>
+      <% end %>
     </div>
   </div>
 </div>

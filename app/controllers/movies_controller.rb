@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.order(:title)
+    @movies = Movie.all
   end
 
   def show
@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
   def create
     @movie = Movie.new params.require(:movie).permit(:title, :synopsis, :release_year, :origin_country ,:genre_id, :director_id)
     if @movie.save
-      return redirect_to movies_path
+      return redirect_to root_path
     end
       render :new
   end
@@ -33,5 +33,18 @@ class MoviesController < ApplicationController
       return redirect_to root_path
     end
       render :edit
+  end
+
+  def release
+    movie = Movie.find_by_id(params[:id])
+    movie.released!
+    redirect_to movies_path(movie.id)
+  end
+
+  def not_release
+    p "nao publicado"
+    movie = Movie.find_by_id(params[:id])
+    movie.not_released!
+    redirect_to movies_path(movie.id)
   end
 end
