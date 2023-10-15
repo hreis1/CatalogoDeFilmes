@@ -25,10 +25,10 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [X] Ao entrar na tela de detalhes de um diretor(a), o usuário pode ver todos os filmes dirigidos por essa pessoa.
 
 **Gerenciamento de Filmes**:
-   - [ ] Cadastro e edição de filmes, com informações como título, ano de lançamento, sinopse, país de origem, duração (em minutos), diretor(a) e gênero.
+   - [X] Cadastro e edição de filmes, com informações como título, ano de lançamento, sinopse, país de origem, duração (em minutos), diretor(a) e gênero.
  
  **Listagem de Filmes**:
-   - [ ] Visualização de todos os filmes cadastrados, exibindo apenas título e ano de lançamento.
+   - [X] Visualização de todos os filmes cadastrados, exibindo apenas título e ano de lançamento.
  
  **Detalhes de um Filme**:
    - [X] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
