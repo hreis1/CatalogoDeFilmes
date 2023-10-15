@@ -14,7 +14,7 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.new params.require(:movie).permit(:title, :synopsis, :release_year, :genre_id, :director_id)
+    @movie = Movie.new params.require(:movie).permit(:title, :synopsis, :release_year, :origin_country ,:genre_id, :director_id)
     if @movie.save
       return redirect_to movies_path
     end
@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find_by_id(params[:id])
-    if @movie.update params.require(:movie).permit(:title, :synopsis, :release_year, :genre_id, :director_id)
+    if @movie.update params.require(:movie).permit(:title, :synopsis, :release_year, :origin_country,:genre_id, :director_id)
       return redirect_to root_path
     end
       render :edit

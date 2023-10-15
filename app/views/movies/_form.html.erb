@@ -14,7 +14,12 @@
       <%= f.label :release_year, "Ano de lançamento" %>
       <%= f.number_field :release_year %>
     </div>
-  
+
+    <div class="mb-3">
+      <%= f.label :origin_country, "País de origem" %>
+      <%= f.text_field :origin_country %>
+    </div>
+
     <div class="mb-3">
       <%= f.label :director_id, "Diretor" %>
       <%= collection_select(:movie, :director_id, Director.all, :id, :name) %>
