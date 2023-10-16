@@ -12,7 +12,7 @@
   
     <div class="mb-3">
       <%= f.label :release_year %>
-      <%= f.number_field :release_year %>
+      <%= f.date_field :release_year %>  
     </div>
 
     <div class="mb-3">
@@ -29,12 +29,7 @@
       <%= f.label :genre_id, "Gênero" %>
       <%= collection_select(:movie, :genre_id, Genre.all, :id, :name) %>
     </div>
-
-    <div class="mb-3">
-      <%= f.label :status, "Lançado" %>
-      <%= f.check_box :status %>
-    </div>
-
+    
     <%= f.submit 'Salvar', class: "btn btn-primary" %>
   
   <% end %>

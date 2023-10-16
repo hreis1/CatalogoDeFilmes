@@ -26,21 +26,15 @@ end
 
 
 movies = [
-  ["Pulp Fiction", 1995, "Assassino que trabalha para a máfia se apaixona pela esposa de seu chefe quando é convidado a acompanhá-la, um boxeador descumpre sua promessa de perder uma luta e um casal tenta um assalto que rapidamente sai do controle.", "EUA", 154, 1, 3],
-  ["Cães de Aluguel", 1992, "Um grupo de criminosos planeja um roubo que acaba em um banho de sangue. Um dos sobreviventes suspeita que um deles é um policial disfarçado.", "EUA", 99, 1, 3],
-  ["Os Bons Companheiros", 1990, "Henry Hill é um mafioso que viveu o auge da sua carreira nos anos 50, 60 e 70. Ele trabalha de forma violenta para ascender dentro da máfia, mas aos poucos vai se envolvendo com drogas e se tornando um homem paranóico.", "EUA", 146, 2, 3],
-  ["Taxi Driver", 1976, "Travis Bickle é um jovem veterano do Vietnã que volta para as ruas de Nova York trabalhando como motorista de táxi. Cada vez mais perturbado com a corrupção ao seu redor, ele inicia uma jornada de violência por toda a cidade.", "EUA", 114, 2, 3],
-  ["Os Infiltrados", 2006, "Billy Costigan é um jovem policial que recebe a missão de se infiltrar na máfia irlandesa que domina o sul de Boston. Enquanto Billy tenta ganhar a confiança de um dos chefes do grupo, outro policial, Colin Sullivan, se infiltra no departamento de polícia como informante dos mafiosos.", "EUA", 151, 2, 3],
-  ["O Lobo de Wall Street", 2013, "Jordan Belfort é um ambicioso corretor da bolsa de valores que cria um verdadeiro império, enriquecendo de forma rápida, porém ilegal. Ele e seus amigos mergulham em um mundo de excessos, mas seus métodos ilícitos despertam a atenção da polícia.", "EUA", 180, 2, 3],
-  ["O Aviador", 2004, "O filme conta a história de Howard Hughes, um excêntrico milionário que ficou conhecido por suas produções hollywoodianas e por quebrar recordes de velocidade em aviões.", "EUA", 170, 2, 3],
-  ["Cassino", 1995, "Sam Rothstein é um apostador profissional enviado a Las Vegas para administrar um cassino de propriedade de um grupo de mafiosos. Sam acaba se envolvendo com uma prostituta e com uma ex-namorada do seu chefe.", "EUA", 178, 2, 3],
-  ["O Irlandês", 2019, "O Irlandês é um épico sobre o crime organizado nos Estados Unidos do pós-guerra contado através da perspectiva do veterano da Segunda Guerra Mundial Frank Sheeran, um assassino profissional que trabalhou ao lado de algumas das personalidades mais marcantes do século 20.", "EUA", 209, 2, 3],
-  ["The Matrix", 1999, "A realidade que conhecemos é uma simulação criada por máquinas. Um hacker, Neo, é escolhido para liderar a resistência humana contra as máquinas.", "EUA", 136, 4, 8],
-  ["Forrest Gump", 1994, "A história da vida de Forrest Gump, um homem comum que acidentalmente desempenha um papel importante em eventos significativos da história americana.", "EUA", 142, 3, 4],
-  ["Inception", 2010, "Dom Cobb é um ladrão de segredos que entra nos sonhos das pessoas. Ele é contratado para implantar uma ideia na mente de um empresário.", "EUA", 148, 4, 8],
-  ["The Shawshank Redemption", 1994, "Um homem inocente é condenado à prisão perpétua em Shawshank e faz amizade com outros prisioneiros enquanto planeja sua fuga.", "EUA", 142, 3, 4],
-  ["Jaws", 1975, "Um grande tubarão-branco ameaça uma cidade costeira e um pescador, um biólogo marinho e um chefe de polícia se unem para detê-lo.", "EUA", 124, 5, 6]
-
+  ["Pulp Fiction", "03-03-1995", "Assassino que trabalha para a máfia se apaixona pela esposa de seu chefe quando é convidado a acompanhá-la, um boxeador descumpre sua promessa de perder uma luta e um casal tenta um assalto que rapidamente sai do controle.", "EUA", 154, 1, 3],
+  ["O Irlandês", "27-11-2019", "A saga épica de Martin Scorsese sobre o crime organizado americano no pós-guerra contada por um matador de aluguel. Estrelando Robert De Niro, Al Pacino e Joe Pesci.", "EUA", 209, 2, 3],
+  ["O Poderoso Chefão", "15-08-1972", "A saga de uma família mafiosa siciliana que luta para encontrar um sucessor à altura do patriarca quando ele se aposenta, enquanto uma guerra com as outras famílias mafiosas irrompe.", "EUA", 175, 3, 3],
+  ["O Poderoso Chefão II", "18-12-1974", "A continuação da saga da família Corleone, comandada por Michael, o novo Don. Agora vivendo em Las Vegas, ele tenta expandir seus negócios para Cuba, enquanto lida com os problemas dos filhos.", "EUA", 202, 3, 3],
+  ["O Poderoso Chefão III", "25-12-1990", "Michael Corleone, agora um idoso, tenta fazer com que sua família se torne uma família completamente legalizada e encontra-se atraído para o mundo do crime organizado.", "EUA", 162, 3, 3],
+  ["Os Bons Companheiros", "21-09-1990", "Henry Hill e seus amigos trabalham para a máfia em Nova York. Mas, em meio a tantos crimes, Henry acaba sendo preso e resolve se tornar informante da polícia.", "EUA", 146, 2, 3],
+  ["Cassino", "24-11-1995", "Sam Rothstein é um jogador profissional enviado a Las Vegas para administrar o cassino Tangiers, financiado pelo Sindicato de Caminhoneiros, chefiado por Andy Stone. Sam faz seu trabalho com eficiência, controlando os lucros, mas não consegue controlar sua esposa viciada em drogas e seu amigo Nicky Santoro, um gângster violento.", "EUA", 178, 2, 3],
+  ["Taxi Driver", "08-02-1976", "Travis Bickle é um jovem veterano do Vietnã, que volta para as ruas de Nova York trabalhando como motorista de táxi. Alienado da sociedade, ele passa as noites atormentadas pela solidão, depressão e insônia, refletindo sobre os problemas sociais que o cercam, e reage com violência crescente.", "EUA", 114, 2, 3],
+  ["Os Infiltrados", "13-10-2006", "Billy Costigan é um jovem policial que recebe a missão de se infiltrar na máfia liderada por Frank Costello. Enquanto Billy tenta ganhar a confiança de Costello, outro policial, Colin Sullivan, se infiltra no departamento de polícia como informante de Costello. Quando suas identidades são descobertas, os dois começam uma corrida para descobrir a identidade um do outro.", "EUA", 151, 2, 3]
 ]
 
 movies.each do |movie|

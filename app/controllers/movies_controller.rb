@@ -15,6 +15,11 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.new params.require(:movie).permit(:title, :synopsis, :release_year, :origin_country ,:genre_id, :director_id)
+    if @movie.release_year > Date.today
+      @movie.status = :released
+    else
+      @movie.status = :not_released
+    end
     if @movie.save
       return redirect_to root_path
     end
@@ -29,6 +34,11 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find_by_id(params[:id])
+    if @movie.release_year > Date.today
+      @movie.status = :released
+    else
+      @movie.status = :not_released
+    end
     if @movie.update params.require(:movie).permit(:title, :synopsis, :release_year, :origin_country,:genre_id, :director_id)
       return redirect_to root_path
     end
@@ -38,13 +48,6 @@ class MoviesController < ApplicationController
   def release
     movie = Movie.find_by_id(params[:id])
     movie.released!
-    redirect_to movies_path(movie.id)
-  end
-
-  def not_release
-    p "nao publicado"
-    movie = Movie.find_by_id(params[:id])
-    movie.not_released!
     redirect_to movies_path(movie.id)
   end
 end
