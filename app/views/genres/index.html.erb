@@ -1,11 +1,18 @@
-<h3>Gêneros</h3>
-<%= link_to 'Cadastrar gênero', new_genre_path %>
-<hr>
+<div class="container rounded-4 p-4 mb-4" style="width: 20rem;">
+  <div class="container text-center">
+    <div class="mb-4">  
+      <h2>Gêneros</h2>
+    </div>  
 
-<ul class="list-group">
-  <% @generos.each do |genero| %>
-    <li class="list-group-item">
-        <%= link_to genero.name, genre_path(genero.id) %>
-      </li>
-  <% end %>
-</ul>
+    <div class="mb-4 rounded-4" >
+      <ul class="list-group">
+        <% @generos.each do |genero| %>
+          <li class="list-group-item">
+            <%= link_to genero.name, genre_path(genero.id) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <%= link_to 'Cadastrar gênero', new_genre_path, class: "btn btn-primary", style:"width:100%" %>
+  </div>
+</div>

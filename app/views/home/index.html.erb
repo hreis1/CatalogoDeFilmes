@@ -1,12 +1,12 @@
-<h3>Catálogo de Filmes</h3>
-<%= link_to 'Cadastrar filme', new_movie_path %>
-<hr>
+<h2 class="text-center mt-4">Catálogo de Filmes</h2>
 
-<div class="btn-group" role="group" aria-label="Basic example">
-  <%= link_to 'Todos os filmes', root_path, {class: 'btn btn-secondary'} %>
-  <%= link_to 'Lançados', root_path+"?q=released", {class: 'btn btn-secondary'} %>
-  <%= link_to 'Não Lançados' , root_path+"?q=not_released", {class: 'btn btn-secondary'} %>
+<div class="container mt-4 mb-4 text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <%= link_to 'Todos os filmes', root_path, {class: 'btn btn-secondary'} %>
+      <%= link_to 'Lançados', root_path+"?q=released", {class: 'btn btn-secondary'} %>
+      <%= link_to 'Não Lançados' , root_path+"?q=not_released", {class: 'btn btn-secondary'} %>
+  </div>
+  <%= link_to 'Cadastrar filme', new_movie_path, class:"btn btn-primary" %>
 </div>
-<hr>
 
 <%= render 'movies/index' %>

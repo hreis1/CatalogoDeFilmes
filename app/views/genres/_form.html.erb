@@ -1,12 +1,14 @@
-<%= form_with model: @genero do |f| %>
-  
-  <div class="mb-3">
-    <%= f.label :name, "Nome" %>
-    <%= f.text_field :name %>
-  </div>
-  
-  <%= f.submit 'Salvar' %>
+<div class="container border p-4 rounded-4 mt-4">
 
-<% end %>
+  <%= form_with model: @genero do |f| %>
+    
+    <div class="mb-3">
+      <%= f.label :name, "Nome", class: "form-label" %>&nbsp;
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    
+    <%= f.submit 'Salvar', class: "btn btn-primary "%>
 
-<%= link_to 'Voltar', genres_path %>
+    <%= link_to 'Voltar', genres_path, class: "btn btn-secondary " %>
+  <% end %>
+</div>
