@@ -34,10 +34,7 @@ O projeto tem como objetivo principal criar um sistema de gerenciamento de filme
    - [X] Ao clicar em um filme na listagem, o usuário pode ver todos os detalhes desse filme.
 
 **Separar Filmes por "Lançados" e "A Ser Lançados"**:
-   - [ ] Permitir que os filmes sejam categorizados como "já lançados" ou "a ser lançados". Os usuários podem visualizar essa informação tanto na listagem quanto nos detalhes de um filme.
-
-**Marcadores de "Rascunho" para Filmes**:
-   - [ ] Implementar a opção de marcar um filme como "rascunho", e exibi-lo apenas se não estiver marcado como tal.
+   - [X] Permitir que os filmes sejam categorizados como "já lançados" ou "a ser lançados". Os usuários podem visualizar essa informação tanto na listagem quanto nos detalhes de um filme.
 
 **Cadastro de Pôster de Filmes**:
    - [ ] Permitir o cadastro de uma imagem do pôster para cada filme e exibir essa imagem na listagem e nos detalhes do filme.
